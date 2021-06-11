@@ -9,7 +9,7 @@ const forecast = (latitude, longitude, callback) => {
               } else if (body.error) {
                      callback('Unable to Find Location', undefined)
               } else {
-                     callback(undefined, body.current.weather_descriptions + ' La temperatura afuera es de ' + body.current.temperature + ' grados. Hay un ' + body.current.precip + '% de probabilidad de lluvia')
+                     callback(undefined, body.current.weather_descriptions + ' La temperatura afuera es de ' + body.current.temperature + ' grados. Hay un ' + body.current.precip + '% de probabilidad de lluvia. No olvides tu chaqueta')
               }
          })
 }
